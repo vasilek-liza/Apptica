@@ -1,0 +1,21 @@
+.flex {
+    .range-date-picker {
+        min-width: 215px;
+        .rs-picker-toggle {
+            font-size: 16px;
+        }
+        .rs-picker-toggle.rs-btn.rs-btn-default {
+            padding-right: 35px;
+        }
+    }
+}
+.rs-picker-daterange-content {
+    .rs-picker-daterange-calendar-group {
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            min-width: 230px;
+        }
+    }
+}

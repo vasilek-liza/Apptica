@@ -1,0 +1,7 @@
+.icon__wrapper {
+    padding-right: 10px;
+    pointer-events: none;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
