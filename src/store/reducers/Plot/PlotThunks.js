@@ -10,8 +10,8 @@ export const getPlotData = createAsyncThunk("getPlotData", async (_, thunkAPI) =
     try {
         const response = await rootAPI.getPlotData({
             countryId: selectedCountry.id,
-            dateFrom: selectedRange[0].toLocaleDateString(),
-            dateTo: selectedRange[1].toLocaleDateString()
+            dateFrom: selectedRange[0].toLocaleDateString("ru-RU"),
+            dateTo: selectedRange[1].toLocaleDateString("ru-RU")
         });
         return { plot: response.data.data, categories };
     } catch (e) {
