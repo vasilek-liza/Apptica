@@ -35,7 +35,6 @@ export function Root() {
     };
 
     const onDownloadPNG = () => {
-        console.log(chartRef.current)
         if (chartRef.current) {
             const link = document.createElement("a");
             link.download = "chart.png";
